@@ -6,19 +6,39 @@
     --accent-color:#2196F3;
 }
 body{
+    margin: 0;
+
     color:var(--primary-text-color);
     font-family:Roboto,sans-serif;
     font-weight: 400;
     letter-spacing: 0.03em;
 }
 .caption{
+margin-top: auto;
+margin-bottom: auto;
+
     color: var(--second-text-color);
     font-weight: 700;
     letter-spacing: 0.06em;
 }
+.container{
+ width: 1230px;
+ margin-left: auto;
+ margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+background-color: yellow;
+}
 .list{
+margin-top: auto;
+margin-bottom: auto;
+
     list-style: none;
     text-decoration: none;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .logo-color{
 color: var(--accent-color);
@@ -26,14 +46,12 @@ color: var(--accent-color);
 .logo{     
  color: #000000;
  font-family:Raleway,sans-serif;
-font-size: 26px;
-line-height:1.2;
-text-decoration:none;
-letter-spacing: 0.03em;
+ font-size: 26px;
+ line-height:1.2;
+ text-decoration:none;
+ letter-spacing: 0.03em;
 }
-.section{
-    
-}
+
 .head-nav-list .link{ 
 text-decoration:none;
 font-weight: 500;
@@ -59,9 +77,12 @@ color: #212121;
 }
 .title-baner{
     background-color: var(--second-bascground-color);
+    text-align: center;
 }
 .title-text{
-text-align:center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    
 text-transform: uppercase;
 color:#ffffff;
 font-size: 44px;
@@ -69,10 +90,8 @@ line-height: 1.36;
 letter-spacing:0.06em;
 }
 .title-button{
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-
+    
+border-color: tomato;
     background-color: var(--accent-color);
     color: #FFFFFF;
     font-weight:700;
@@ -81,10 +100,16 @@ line-height:1.87;
 letter-spacing:0.06em;
 }
 .advantages{
+    margin-bottom: 94px;
+    background-color: tomato;
 }
 .advantage-caption{
+margin-top: 0;
+margin-bottom: 10px;
+
 font-size: 14px;
 line-height:1.14;
+text-transform: uppercase;
 }
 .advantage-text{
     font-size: 14px;
@@ -95,6 +120,8 @@ line-height: 1.71;
 .advantage-item{
 }
 .work{
+    margin-bottom: 94px;
+     background-color: tomato;
 }
 .work-caption{
 font-weight: 700;
@@ -109,7 +136,11 @@ letter-spacing: 0.03em;
 .work-item{
 }
 .comand{
-    background-color:  #F5F4FA;
+     background-color: tomato;
+padding-top: 94px;
+padding-bottom: 94px;
+
+    /* background-color:  #F5F4FA; */
 }
 .comands-caption {
     font-weight: 700;
@@ -134,15 +165,19 @@ letter-spacing: 0.03em;
     background-color: var(--second-bascground-color);
 }
 .footer-logo{
-    color: #ffffff;
- font-family:Raleway,sans-serif;
+ 
+
+color: #ffffff;
+font-family:Raleway,sans-serif;
 font-size: 26px;
 line-height:1.2;
 text-decoration:none;
 letter-spacing: 0.03em;
 }
-.footer-addres{
-     font-style: normal;
+.footer-addres{ 
+
+
+font-family: inherit;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -162,16 +197,32 @@ color: rgba(255, 255, 255, 0.6);
 .footer-item{  
 }
 .filter{
+    
+   
 }
-.filter-list{
+.filter-list{ 
+    display: flex;
+    justify-content: center;
+}
+.filter-list .filter-item+.filter-item{
+    margin-left: 8px;
+}
+.filter-item{
+
 }
 .filter-button{
+border-radius: 4px;
+padding: 6px 22px;
+
+
 font-family: inherit;
 background-color: #F5F4FA;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 letter-spacing: 0.03em;
+}
+.filter-list .list:last-child{
 }
 .filter-button:hover,
 .filter-button:focus{
