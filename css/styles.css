@@ -7,43 +7,61 @@
 }
 body{
     margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
 
+    width: 1600px;
     color:var(--primary-text-color);
     font-family:Roboto,sans-serif;
     font-weight: 400;
     letter-spacing: 0.03em;
 }
 .caption{
-margin-top: auto;
-margin-bottom: auto;
+margin-top: 0;
+margin-bottom: 0;
 
     color: var(--second-text-color);
     font-weight: 700;
     letter-spacing: 0.06em;
 }
 .container{
- width: 1230px;
- margin-left: auto;
- margin-right: auto;
+width: 1230px;
+margin-left: auto;
+margin-right: auto;
 padding-left: 15px;
 padding-right: 15px;
-background-color: yellow;
 }
 .list{
-margin-top: auto;
-margin-bottom: auto;
+margin-top: 0;
+margin-bottom: 0;
 
-    list-style: none;
-    text-decoration: none;
+list-style: none;
+text-decoration: none;
 }
 p{
-    margin-top: 0;
-    margin-bottom: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+ul{
+padding-left: 0;
+}
+.head-container{
+align-items:center;
+display: flex;
+width: 1230px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
 }
 .logo-color{
+
 color: var(--accent-color);
 }
-.logo{     
+.logo{
+
  color: #000000;
  font-family:Raleway,sans-serif;
  font-size: 26px;
@@ -51,8 +69,20 @@ color: var(--accent-color);
  text-decoration:none;
  letter-spacing: 0.03em;
 }
+.head-nav-list.list{
+    display: flex;
+    margin-left: 93px;
+
+}
+.head-nav-list.list .item+.item{
+    margin-left: 50px;
+}
+.head-nav{
+    display: flex;
+}
 
 .head-nav-list .link{ 
+
 text-decoration:none;
 font-weight: 500;
 font-size: 14px;
@@ -67,7 +97,21 @@ color: #212121;
 .head-nav-list .link:focus{
     color: var(--accent-color);
 }
+.adres-list.list{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+.adres-list.list .item+.item{
+    margin-left: 50px;
+}
+
 .adres-list .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     text-decoration:none;
     color:var(--primary-text-color);
 }
@@ -75,7 +119,9 @@ color: #212121;
 .adres-list .link:focus{
     color: var(--accent-color);
 }
+
 .title-baner{
+
     background-color: var(--second-bascground-color);
     text-align: center;
 }
@@ -90,18 +136,16 @@ line-height: 1.36;
 letter-spacing:0.06em;
 }
 .title-button{
-    
-border-color: tomato;
-    background-color: var(--accent-color);
-    color: #FFFFFF;
-    font-weight:700;
+    border-radius: 4px;
+background-color: var(--accent-color);
+color: #FFFFFF;
+font-weight:700;
 font-size: 16px;
 line-height:1.87;
 letter-spacing:0.06em;
 }
 .advantages{
-    margin-bottom: 94px;
-    background-color: tomato;
+    padding-bottom: 94px;
 }
 .advantage-caption{
 margin-top: 0;
@@ -114,14 +158,19 @@ text-transform: uppercase;
 .advantage-text{
     font-size: 14px;
 line-height: 1.71;
+
 }
 .advantages-list{
+    display: flex;
+
 }
-.advantage-item{
+.advantages-list .advantage-item+.advantage-item{
+    margin-right: 30px;
+    
 }
 .work{
-    margin-bottom: 94px;
-     background-color: tomato;
+
+    padding-bottom: 94px;
 }
 .work-caption{
 font-weight: 700;
@@ -129,18 +178,36 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
+}
+.work-list.list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.work-container{
+  align-items:center;
+display: flex;
+width: 1230px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+}
+.work-item {
+    display: block;
+    margin-right: 30px;
 
 }
-.work-list{
+.work-item:nth-child(3n){
+    margin-right: 0;
 }
-.work-item{
-}
+    
+
 .comand{
-     background-color: tomato;
 padding-top: 94px;
 padding-bottom: 94px;
 
-    /* background-color:  #F5F4FA; */
+    background-color:  #F5F4FA;
 }
 .comands-caption {
     font-weight: 700;
@@ -149,9 +216,16 @@ line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 }
-.comand-list{
+.comand-list.list{
+    display: flex;
 }
 .comand-item{
+      display: block;
+    margin-right: 30px;
+    text-align: center;
+}
+.comand-item:nth-child(4n){
+    margin-right: 0;
 }
 .comand-caption{
 font-weight: 500;
