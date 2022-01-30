@@ -8,7 +8,6 @@
 }
 body{
     margin: 0;
-    width: 1600px;
 
     color:var(--primary-text-color);
     font-family:Roboto,sans-serif;
@@ -37,7 +36,7 @@ margin-bottom: 0;
     letter-spacing: 0.06em;
 }
 .container{
-width: 1230px;
+width: 1200px;
 margin-left: auto;
 margin-right: auto;
 padding-left: 15px;
@@ -55,7 +54,7 @@ text-decoration: none;
 .head-container{
 align-items:center;
 display: flex;
-width: 1230px;
+width: 1200px;
 margin-left: auto;
 margin-right: auto;
 padding-left: 15px;
@@ -77,6 +76,7 @@ color: var(--accent-color);
 .head-nav-list.list{
     display: flex;
     margin-left: 93px;
+    align-items: center;
 
 }
 .head-nav-list.list .item+.item{
@@ -134,6 +134,8 @@ color: #212121;
 
     background-color: var(--second-bascground-color);
     text-align: center;
+    padding-top: 200PX;
+    padding-bottom: 200px;
 }
 .title-text{
     margin-top: 0;
@@ -155,9 +157,10 @@ line-height:1.87;
 letter-spacing:0.06em;
 }
 .advantages{
-    padding-bottom: 94px;
+    padding-top: 94px;
 }
 .advantage-caption{
+text-align: center;
 margin-top: 0;
 margin-bottom: 10px;
 
@@ -178,11 +181,16 @@ line-height: 1.71;
     margin-left: 30px;
     
 }
+.advantage-item{
+    width: 270px;
+}
 .work{
-
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 .work-caption{
+margin-bottom: 50px;
+
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
@@ -208,17 +216,24 @@ letter-spacing: 0.03em;
 padding-top: 94px;
 padding-bottom: 94px;
 
-    background-color:  #F5F4FA;
+background-color:  #F5F4FA;
+}
+.comand-blok{
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .comands-caption {
-    font-weight: 700;
+margin-bottom: 50px;
+
+font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 }
 .comand-list.list{
-    display: flex;
+display: flex;
 }
 .comand-item{
     margin-right: 30px;
@@ -228,6 +243,8 @@ letter-spacing: 0.03em;
     margin-right: 0;
 }
 .comand-caption{
+margin-bottom: 10px;
+
 font-weight: 500;
 font-size: 16px;
 line-height:1.18;
@@ -236,9 +253,14 @@ letter-spacing: 0.03em;
 .comand-text{
 }
 .footer{
-    background-color: var(--second-bascground-color);
+padding-top: 60px;
+padding-bottom: 60px;
+
+background-color: var(--second-bascground-color);
 }
 .footer-logo{
+    display: block;
+    margin-bottom: 20px;
  
 
 color: #ffffff;
@@ -250,7 +272,7 @@ letter-spacing: 0.03em;
 }
 .footer-addres{ 
 
-
+font-style: normal;
 font-family: inherit;
 font-size: 14px;
 line-height: 1.71;
@@ -270,10 +292,20 @@ color: rgba(255, 255, 255, 0.6);
 }
 .footer-item{  
 }
-.filter{
-padding-top: 94px;    
-   
+.examples{
+padding-top: 94px;  
+padding-bottom: 94px;     
 }
+.examples-box{
+padding-left: 24px;
+padding-right: 24px;
+padding-top: 20px;
+padding-bottom: 20px;
+ border-bottom: 1px solid#EEEEEE;
+ border-left: 1px solid#EEEEEE;
+ border-right:1px solid#EEEEEE;
+}
+   
 .filter-list{ 
     display: flex;
     justify-content: center;
@@ -308,6 +340,8 @@ letter-spacing: 0.03em;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
+
+ margin-bottom: 4px;
 }
 .examples-list{
  display: flex;
@@ -320,6 +354,9 @@ letter-spacing: 0.06em;
 }
 .examples-item:nth-child(3n){
     margin: 0;
+}
+.examples-item:nth-last-child(-n + 3){
+    margin-bottom: 0;
 }
 .examples-caption{
 font-size: 18px;
