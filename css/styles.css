@@ -102,6 +102,13 @@ color: #212121;
 .head-nav-list .link:focus{
     color: var(--accent-color);
 }
+.adres-list a.item::before{
+    content:"";
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+
+}
 .adres-list.list{
     display: flex;
     margin-top: 0;
@@ -158,6 +165,19 @@ letter-spacing:0.06em;
 }
 .advantages{
     padding-top: 94px;
+}
+.advantage-caption{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .advantage-caption{
 text-align: center;
@@ -292,6 +312,19 @@ color: rgba(255, 255, 255, 0.6);
 }
 .footer-item{  
 }
+.example-caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .examples{
 padding-top: 94px;  
 padding-bottom: 94px;     
@@ -309,6 +342,7 @@ padding-bottom: 20px;
 .filter-list{ 
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .filter-list .filter-item+.filter-item{
     margin-left: 8px;
