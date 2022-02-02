@@ -166,7 +166,7 @@ letter-spacing:0.06em;
 .advantages{
     padding-top: 94px;
 }
-.advantage-caption{
+.advantages-caption{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -180,7 +180,6 @@ letter-spacing:0.06em;
   overflow: hidden;
 }
 .advantage-caption{
-text-align: center;
 margin-top: 0;
 margin-bottom: 10px;
 
@@ -201,6 +200,7 @@ line-height: 1.71;
     margin-left: 30px;
     
 }
+
 .advantage-item{
     width: 270px;
 }
@@ -258,6 +258,14 @@ display: flex;
 .comand-item{
     margin-right: 30px;
     text-align: center;
+    background: #FFFFFF;
+/* material shadow v1 */
+
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12)
+, 0px 1px 1px rgba(0, 0, 0, 0.14)
+, 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
 }
 .comand-item:nth-child(4n){
     margin-right: 0;
@@ -291,6 +299,7 @@ text-decoration:none;
 letter-spacing: 0.03em;
 }
 .footer-addres{ 
+    margin-bottom: 9px;
 
 font-style: normal;
 font-family: inherit;
@@ -301,6 +310,7 @@ color:#ffffff;
 
 }
  .footer-link{
+    
      text-decoration: none;
      font-family: Roboto,sans-serif;
      font-style: normal;
@@ -310,7 +320,12 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
       
 }
-.footer-item{  
+.footer-item{
+     display: block;
+margin-bottom: 9px;
+}
+.footer-item:last-child{
+    margin-bottom: 0;
 }
 .example-caption {
   position: absolute;
@@ -385,9 +400,12 @@ letter-spacing: 0.06em;
     display: block;
     margin-right: 30px;
     margin-bottom: 30px;
+    max-width: 370px;
+    background: #FFFFFF;
+border: 1px solid #EEEEEE;
 }
 .examples-item:nth-child(3n){
-    margin: 0;
+    margin-right: 0;
 }
 .examples-item:nth-last-child(-n + 3){
     margin-bottom: 0;
